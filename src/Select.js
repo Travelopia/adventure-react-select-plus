@@ -315,7 +315,7 @@ class Select extends React.Component {
 			this.focus();
 
 			let input = this.input;
-			let toOpen = true;
+			let toOpen = this.props.openOnClick;
 
 			if (typeof input.getInput === 'function') {
 				// Get the actual DOM input if the ref is an <AutosizeInput /> component

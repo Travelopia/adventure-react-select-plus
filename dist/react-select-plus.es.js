@@ -1089,7 +1089,7 @@ var Select$1 = function (_React$Component) {
 				this.focus();
 
 				var input = this.input;
-				var toOpen = true;
+				var toOpen = this.props.openOnClick;
 
 				if (typeof input.getInput === 'function') {
 					// Get the actual DOM input if the ref is an <AutosizeInput /> component
