@@ -479,6 +479,10 @@ var Option = function (_React$Component) {
 	createClass(Option, [{
 		key: 'handleMouseDown',
 		value: function handleMouseDown(event) {
+			if (event.button) {
+				return;
+			}
+
 			event.preventDefault();
 			event.stopPropagation();
 			this.props.onSelect(this.props.option, event);
